@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<script>
+<!--
+function timedRefresh(timeoutPeriod) {
+	setTimeout("location.reload(true);",timeoutPeriod);
+}
+
+window.onload = timedRefresh(10000);
+
+//   -->
+</script>
+<head>
+	<title></title>
+	<style>
+  tr:hover {background-color: #f5f5f5;}
+	table, th, td {
+    	border: 1px solid black;
+    	border-collapse: collapse;
+      padding: 15px;
+      text-align: left;
+	}
+  th {
+    background-color: #add8e6;
+    color: white;
+
+  }
+  caption {
+    display: table-caption;
+    text-align: center;
+    font-size: 30px;
+  }
+	</style>
+</head>
+<body>
+		<table style="width:30%">
+		<caption>Binance vs Bitbank</caption>
+  		<tr>
+  			<th>Code</th>
+    		<th>Pair</th> 
+  			<th>Binance Price</th>
+    		<th>Bitbank Price</th> 
+  		</tr>
+		{% for i in range(0, binancePrices|length)%}
+		<tr>
+    		<td>{{ i }}</td>
+    		<td>{{ currencyPairs[i] }}</td> 
+    		<td>{{ binancePrices[i]  }}</td>
+    		<td>{{ bitbankPrices[i] }}</td> 
+  		</tr>
+		{% endfor %}
+	</table>
+
+   <p>The above table displays the currency pairs from both websites.<br>
+   <br>
+   <br>
+   <br>
+   the below table shows potential percentage gain.<br>
+   </p>
+
+		<table style="width:30%">
+		<caption>Arbitrage Trades</caption>
+  		<tr>
+  			<th>Code</th>
+    		<th>Percentage</th> 
+  		</tr>
+  		<tr>
+  			<td>0</td>
+    		<td>{{ arbPer[0] }}</td> 
+  		</tr>
+      <tr>
+        <td>1</td>
+        <td>{{ arbPer[1] }}</td> 
+      </tr>
+  		
+		
+	</table>
+</body>
+</html>
