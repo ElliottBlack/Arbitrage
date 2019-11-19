@@ -10,8 +10,8 @@ Example trade: start with bitcoin on the bitbank website -> convert to ethereum 
 
 'Arbitrage' as defined by google: the simultaneous buying and selling of securities, currency, or commodities in different markets or in derivative forms in order to take advantage of differing prices for the same asset.
 
-![](PoipoiUI.gif)
-![](poipoigameplay.gif)
+![](readmePic.png)
+
 
 ### Running Application
 
@@ -19,24 +19,20 @@ Currently running from the localhost.
 access the command prompt and run the .py file
 head to your web browers and go to the http://localhost:5000/
 
-### System Requirements
-
-General guide unity
-
-OS: Windows 7 SP1+, 8, 10, 64-bit versions only; macOS 10.12+
-
-CPU: SSE2 instruction set support.
-
-GPU: Graphics card with DX10 (shader model 4.0) capabilities.
-
 ## Built With
 
-* [Unity](https://unity.com/) - game engine
-* [Visual Studios](https://visualstudio.microsoft.com/) - IDE
+* [Python IDLE](https://www.python.org/) - python
+* [Sublime Text](https://www.sublimetext.com/) - html
+
+## Modules Used
+
+* [Flask](https://www.fullstackpython.com/flask.html) - Web Framework
+* [Flask-SocketIO](https://flask-socketio.readthedocs.io/en/latest/) - Web Socket
+* [Requests](https://realpython.com/python-requests/) - HTTP requests
+* [JSON](https://docs.python.org/3/library/json.html) - Data-interchange format
+
 
 ## Authors
 
-* **Elliott Black** - *Design and development* 
-* **Danielle Hofstetter** - *Art director* 
-
+* **Elliott Black** - *Software development* 
 
