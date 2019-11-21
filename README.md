@@ -15,9 +15,7 @@ Example trade: start with bitcoin on the bitbank website -> convert to ethereum 
 
 ### Running Application
 
-Currently running from the localhost. 
-Access the command prompt and run the .py file.
-http://localhost:5000/
+http://elliottblack.pythonanywhere.com/
 
 ## Built With
 
